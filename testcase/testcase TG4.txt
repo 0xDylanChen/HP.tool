@@ -1,0 +1,53 @@
+1	Compatibility Testing
+	Go To Start Menu (Eg: One Note), Buttons, Task Bar, Open All Preinstalled Apps And Verify The Expected Behavior.  Verify The Lines Are Properly Aligned, No Buttons/Apps Are Over Lapped.  User Should Be Able Read The Apps And Menu With Out Any Issues
+	Open File Explorer (Explorer.Exe) > Open Pictures Folder And Verify That You Can Peruse Folders And Open Files As Expected.
+	Verify Able To Launch The Application By "Search Box"/All Apps View, including HP APPs when OS is DASH image.
+	Verify Able To Drag And Drop From Mfu/"All Apps" To Tile Grid View, including HP APPs when OS is DASH image.
+13	Windows Hello  (For Supported Platforms Only)
+	[Webcam] Windows Hello - Face Recognition
+	Boot up and log in "A" user account with Admin role, setup Face Recognition in Windows Hello
+	Log out and check Windows Hello icon shows up in lock screen (a eye icon on the top-center) and try to unlock system with Face Recognition
+	[ToF] HP Auto Lock & Awake Integration Test - System Wake Up and Windows Hello Log In Combination Test (If your system supports IR camera)
+	Enroll Windows Hello Face Recognition feature.
+	Your system should launch Windows Hello and log in by face recognition.
+	[FPR] Login By Fingerprint Authentication-Windows Hello
+	"(Support Platform or SKU only)
+If the platform support IR camera and Finger Print Reader(FPR), please enable Windows Hello function. Set up the PIN, FPR and IR Camera for log in system."
+	"Enable Windows Hello, and use Windows Hello Log-in the system. Need to cover--
+Scenario 1: Setting Password and PIN to log-in.
+Scenario 2: Setting Fingerprint(if support) and use fingerprint log-in.
+Scenario 3: Setting Face recognition(If support IR camera) and use face recognition log-in."
+16	HP Hotkey Support
+	Install HP Hotkeys if not already installed. Verify successful installation.
+	Press FN+ESC and verify able to display system information with correct results.
+	Verify brightness controls work as expected.
+	Verify microphone mute control works as expected.
+	If supported in the BIOS for the SUT, Verify LAN/WLAN switching works as expected.
+17	HP Apps (Fusion Apps)
+	"Check if all bundled HP Apps still can be launch after KB installed.
+1. Launch HP Applications, Apps should Launch successfully.
+2. Adhoc testing on HP Applications and list issue if any"
+	HPSA (HP Support Assistant) 
+	HP Privacy Settings/Privacy Screen/HP Programmable Key
+	HP Interactive Light
+	HPEC/HPPM
+	" myHP module checking:
+ • Home 
+ • Video Controls (myHP2.0) 
+ • HP Programmable Key (CMIT NB only)
+ • Smart Experiences (Ultron only)
+ • Featured Applications
+ • Settings
+ Note: 
+ 1. Video controls just support from 2022 NPI platforms and Raza, Starlight, Sylva1.0. 
+ 2. Home module support for myHP1.0 and myHP2.0 - P011ZF-B2V to P012E1-B2N and remove from myHP2.0 P012E1-B2P
+3. For ""Corporate Ready image"" and ""MMD"", Feature applicatons will not list in myHP UI since no other HP applications installed. (DCR371524)
+"
+	Turn off Bitlocker and remove KB
+	Downgrade to previous formal bios. (01.xx.xx)
+	Enable secure boot.
+	Turn on Bitlocker then install KB, save Bitlocker key to USB device.
+	Use FUR upgrade to last BIOS but don't restart.
+	Do windows update.
+	When windows update is finished, reboot system.
+	Check system not ask Bitlocker key.

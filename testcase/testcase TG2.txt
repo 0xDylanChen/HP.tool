@@ -1,0 +1,43 @@
+	If Dc Mode Is Supported, Plug In Ac Power.  Verify Uut Can Be Charged By The Charger, Check Battery Icon And Any Indicators (E.G. Led Or Specified By Manufacturing) Are Expected.
+	Switch between AC and DC a few times and verify unit handles power transitions fine.
+6	Ethernet
+	"Open a cmd prompt type ""ncpa.cpl"".  Right click to disable/enable the Ethernet device and verify that the Ethernet interface and status is as expected.
+Verify the adapter name is correct and the adapter comes back after enable (icon is grayed out during disable and colorful after enable)"
+	Connect an Ethernet cable (should have internet connectivity).  Open PowerShell and Run "Get-NetAdapter".  Verify the Ethernet adapter is listed in the "Get-NetAdapter" output.
+	Run "ping internetbeacon.msedge.net /4" (alternately, ping another system on the local network or the default gateway)(This specifies the IPv4 connection, using /6 would specify the IPv6 connection.).  Standby/resume the system and run "Test-NetConnection" from the PowerShell window.   Verify the ping succeeds (should get a reply from the destination server) and ping is successful after standby/resume test.
+	"Check LAN/WAN Auto Switching, this feature Enable/Disable in BIOS F10 setup menu.
+Step:
+1. When LAN Cable is plugged in the system switches to Lan with the Wi-fi turned OFF.
+2. When LAN Cable is plugged in the system switches to LAN with Wi-Fi in connected state."
+7	Wlan
+	"1. Open Settings --> Network And Internet-->Wifi 
+2. Verify Default Wi-Fi Radio State Is On, Uut Can Discover Nearby Wireless Access Points (Check View Available Networks Ui)
+3. Connect To An Open Wireless Station  (If 5 Ghz Network Is Available, Please Test On Both 2.4 Ghz And 5 Ghz)"
+	"1. Settings --> Network And Internet --> Wi-Fi, Turn Off Wi-Fi
+2. Enter Standby And Resume
+3. Settings --> Network And Internet --> Wi-Fi, Verify Wi-Fi Radio State is still Off.
+4. Settings --> Network And Internet --> Wi-Fi, Turn On Wi-Fi"
+	"1. Settings --> Network And Internet --> Airplane Mode, Turn On Airplane Mode And Ensure Wi-Fi Turns Off In 5 Seconds. Turn Wi-Fi Back On And Ensure Shows Networks And Connects To The Ap.
+2. Sleep And Resume And Verify Able To Connect Back To The Network."
+	Disable/Enable The Adapter From The Device Manager And Verify Able To Connect Again After Re-Enabling The Device.
+8	Bluetooth
+	Install the latest Bluetooth driver for your device by either manually installing the latest driver or installing from Windows Update.  Ensure Bluetooth Trace Logging Is Enabled At The Beginning Of The Test Case And Then Disabled After The Failure Occurrs.
+	"For Notebooks:
+1.  Launch Action Center And Toggle The Bluetooth Radio On.  
+2.  Right Click The Bluetooth Icon And Select Go To Settings To Open The Bluetooth Settings Page And From This Page Toggle The Radio Off And On."
+	"For Notebooks:
+1.  With The Bt Radio On, Verify Any Discoverable Bluetooth Devices Should Be Discovered By Uut And Previously Paired Devices Should Auto Connect With The Uut.  
+2.  Verify Devices Show As Connected Only When The Device Is Actually Being Used I.E. A Mouse, Speaker, Headset, Keyboard or using NB/DT to pair then test data transfer. If The Previously Paired Device Is Not In Use, Its Connection Status Will Show As Paired.  
+3.  Reboot System And Ensure Bluetooth Setting Remains The Same As Prior To Reboot"
+	"1.  Launch Action Center, Confirm Bluetooth Is On, Turn Airplane Mode On And Ensure Bluetooth Turns Off Within 5 Seconds. 
+2.  With Airplane Mode Still On, Toggle Bluetooth On To Confirm It Still Works When Other Wireless Radios Are Turned Off."
+	"1.  Verify Any Discoverable Bluetooth Devices Are Found And Previously Paired Devices Should Auto Connect With The Uut.  
+2.  Verify Devices Show As Connected Only When The Device Is Actually Being Used I.E. A Mouse Or Keyboard, If The Previously Paired Device Is Not In Use, Its Connection Status Will Show As Paired."
+	"1.  Confirm All Of The Same Basic Functionality After Putting The Sut Into Standby Mode And Resuming.  
+2.  Verify Devices Autoconnect After Resuming Or Restarting.  Open Bluetooth Settings And “Remove Device” Aka Un-Pair Any Of The Currently Paired Peripherals To Confirm Deleting A Pairing Is Successful."
+	"1.  Pair A Bluetooth Speaker Or Headset.
+2.  Play A Media Playlist With At Least 3 Songs In The List.  Confirm The Playlist Media Data Correctly Shows The Track Title, Artist, Current Time & Position.  Verify No Glitches In The Audio Stream."
+	Power Off The Connected Bluetooth Peripheral, Wait 10 Seconds, Power It Back On And Confirm It Automatically Reconnects To The Uut And The Music Playback Can Be Easily Resumed.
+	"1.  Pair A Bt Sharing Capable Phone To The Uut.  If Open, Close The Bluetooth Settings Page After Pairing So It Doesn’T Interfere With The File Transfer Rate.
+2.  From The Uut, Navigate To A Content File, Music File Or Picture, Preferably .Mp3, .Jpg And Right Click And Choose ""Send To"" -> ""Bluetooth Device"", Follow The Inline Instructions.
+3.  Accept Any Sharing Consent Notifications On The Receiving Phone.  Once The File Is Successfully Transferred, Confirm It Opens Correctly"

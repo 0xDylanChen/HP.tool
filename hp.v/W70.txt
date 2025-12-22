@@ -1,0 +1,32 @@
+Report: W70_01.html
+--------------------------------------------------------------------------------------------------------------
+Target Name                         | Mapped HTML Name                                   | Version
+--------------------------------------------------------------------------------------------------------------
+HP Sure Sense                       | Sure Recover                                       | 10.1.28.270
+HP Interactive Light                | ---                                                | Not Found
+HPSA (HP Support Assistant)         | HP Support Assistant                               | 9.49.5.0
+myHP                                | ---                                                | Not Found
+HP TechPulse                        | ---                                                | Not Found
+HP Presence Aware Provider          | ---                                                | Not Found
+HP Security Update Serivce          | HP Security Update Service                         | 4.4.27.1790
+HP Jumpstarts                       | ---                                                | Not Found
+HP Connection Optimizer             | HP Connection Optimizer                            | 2.0.21.0
+HP Notifications                    | HP Notifications                                   | 1.1.31.56
+HSA Fusion (Fusion version)         | HSA Fusion for commercial                          | 1.83.4311.0
+HP Programmable Key                 | ---                                                | Not Found
+HP Hotkey Support                   | HP Hotkey Support - UWP                            | 8.10.49.380
+HP Sure Recover                     | Sure Recover                                       | 10.1.28.270
+HP Sure Run Module                  | Sure Run                                           | 5.0.5.81
+HP Documentation                    | HP Documentation 2081                              | 1.01
+HP Quick Drop                       | ---                                                | Not Found
+HP Power Manager (HPPM)             | HP Client Security Manager Gen7                    | 11.1.6.995
+HP Auto Lock Awake                  | ---                                                | Not Found
+HP Sure Click                       | Sure Recover                                       | 10.1.28.270
+HP Easy Clean (HPEC)                | ---                                                | Not Found
+HP Client Security Manaegr          | HP Client Security Manager Gen7                    | 11.1.6.995
+HP Dock Accessory WMI Provider      | ---                                                | Not Found
+HP PC Hardware Diagnostics Windows  | HP PC Hardware Diagnostics Windows                 | 2.9.0.0
+HP System Information               | ---                                                | Not Found
+HP Privacy Settings                 | HP Privacy Settings                                | 1.4.17.0
+HP Quick Touch                      | ---                                                | Not Found
+HP Wolf Security                    | HP Wolf Security for Business                      | 4.4.27.1790

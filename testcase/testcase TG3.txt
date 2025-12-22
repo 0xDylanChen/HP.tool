@@ -1,0 +1,55 @@
+9	Storage
+	"1. Verify Copy And Delete Files On Internal And External Storage Devices.
+2. Verify Format Functionality On Storage Device."
+	Verify Sd Cards Are Functional On Insertion And After S3/S4 Events.  Remove the SD Card and Verify Removed As Expected
+12	Usb2, Usb3, Usb Type C
+	Verify Usb2 and USB3 and Type C Devices Can Be Detected And Used, Such Like :Usb Devices (Keyboard, Mouse, Memory Stick, External Hard Disk, Webcam, Headphones, Printer, Scanner Etc)
+	Verify All Usb Devices Function As Expected After Sleep And Resume
+	Plug In A Chargeable Device To A Usb Charge Port And Verify Device Is Able To Charge Fine.
+	Flip Or Reverse The Orientation Of The Usb Type-C Cable And Verify Device Is Recognized And Fuctional.
+14	Modern Standby 
+	Clear Event Viewer Before Testing.
+	Load Bios Default. Bios Default Is "Connected Standby  Enable". Base On Project Design). Boot To Os And Type Command To Make Sure Connected Standby Enable In Project. Manual Enter Cs Mode. Check System Event Viewer. Find The Event "Source: Kernal Power";" Event Id 506: Check The Information Is Distribute System Enter Connected Standby. Make Sure Date And Time Match This Event.
+	Test In System Only Mode. Check Below Function Under Ac/Dc Mode. Using Image Default Setting. Enter Ms Via Timeout And Idle In Ms More Than 10 Minutes. Resume Ms Via Windows Key Or Power Button.Check System Resume From Ms Mode Without Any Error
+	Attach Supported System Base/Dock  Check Below Function Under Ac/Dc Mode. Using Image Default Setting. Enter Ms Via Timeout And Idle In Ms More Than 10 Minutes. Resume Ms Via Windows Key Or Power Button.Check System Resume From Ms Mode Without Any Error
+	Enter Ms Mode In System Only /Dc Only Mode. Hot Attach To Supported Dock/ Supported System Base. System Will Turn On Display If Dock/System Base  Have Power Supply Function.
+	Enter Ms Mode In Ac Mode/Attached With Supported Dock And Supported System Base. Detach System Base/Dock During Ms. Check Disply Will Turn On.
+	Enter Ms Mode In System Only/Dc Mode. Check All Wake Up Event Can Wake Up From Ms
+	Enter Ms Mode In System Only/Ac Mode. Check All Wake Up Event Can Wake Up From Ms
+	Test In Ac/Tablet Mode. Press Power Button <2 Seconds When Online Video Playback. Test In Dc/Tablet Mode.Press Power Button>2 But <10 Seconds Seconds When Online Video Playback. Test In Dc And Ac/Tablet Mode Press Power Button >10 Seconds When Online Video Playback.
+	Attach All Supported Dock/System Base/Jacket And Reboot System. Press Power Button <2 Seconds With All Supported Dock. Press Power Button >2 But <10  Seconds With All Supported Dock. System Shutdown If Held Power Button >= 10 Seconds.
+	Connect To Internet Via Wifi/Dc Mode. Enter Ms In Test Unit. Send Several Mail To Test Unit And Check Audio Notification Alarm And Display Still Off. Wake Up The System And Check Lock Screen Log These Information.
+	Connect To Internet Via Internal Lan. Download Large File From Website And Do Windows Update At Test Unit. Check Mail Alarm Can Be Observed In Ms Dc Mode. Esume From Ms After 5 Minutes Check Lock Screen Have Mail Information And File Down Completely Or Download Progress Increase.
+	Quiet Hour: Click The "Action Center "And Turn On/Off The "Quiet Hours" Title. Check Instant Message And Voip Call Will Not Wake Up Screen. No Audio Notification.
+	Manually Move The System Near Each Wi-Fi Access Point And Connect To Each Network For A Few Minutes With The Screen On And Validate That Internet Connectivity Is Functional." Move System Form Network A To Network B During Ms(Dc Mode). Wait 5 Minutes And Check Push Mail Still Functional.
+	Turn On Wlan And Wwan At Same Time.(Make Wwan And Wlan Have Internet Connectivity Before Enter Ms) Enter Ms And Idle 5 Minutes." Power Down Access Point And Wait 5 Minutes. Check Push Mail Function Work Normally.(Refer To Push Mail Test Case)
+	Playback An Audio Track Via Supported Ap. Keep Playback At Least 5 Minutes.
+	Enter Ms Mode By Hot Key Or Power Button. Check Audio Playback Is Continue At Least 10 Minutes And Audio Quality Is Accepted.
+	Adjust Volume Up And Volume Down During Ms Mode. Check Work As Expect.
+	Attach Headset To Audio Jack. Check Sound Output From Headset And No Sound Output From Internal Speaker. Repeat Above Steps At Least 5 Cycle.
+15	Docking
+	"1. power on host
+2. attach all devices to the dock. connect hpcorpnet to dock ethernet to dock.
+3. power on dock if power button available. plug dock to host.
+4. execute [check step]
+5. host enter sleep mode 30 seconds and wakeup system
+6. execute [check step]
+7. host enter hibernation and wakeup system
+8. execute [check step]
+
+[check step]
+1. test mouse and keyboard if available
+   # check mouse and keyboard work without issues
+2. if docking has ethernet port, open command prompt -> ping ""resolver.hpicorp.net""
+   # check no network package lost
+3. connect monitors to all video port. set connected monitors as extended displays in windows
+   # check all extended monitors show desktop without issues
+4. play sample video from USB storage by media player on Win7 or ""movie and TV"" on Win10. move player window to each extended monitor. switch audio output device to each external device
+   # check each monitor plays video with correct display
+   # check each audio device plays correctly"
+	"1. dock to the unit
+2. power on system
+3. check dock detected on the unit
+4. shutdown unit
+repeat step 2 ~ 4
+* repeat time: manual = 10, auto = 100"

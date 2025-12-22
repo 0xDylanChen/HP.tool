@@ -1,0 +1,6 @@
+customtkinter
+pywinauto
+pyautogui
+opencv-python
+pillow
+beautifulsoup4

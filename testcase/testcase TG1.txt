@@ -1,0 +1,49 @@
+2	Audio
+	Launch The Audio Control Panel >   Right-Click On The Bottom Right “Audio” Icon > Click On “Playback Devices” > Play Test Sound On Internal Speaker.  Verify Volume Control With The Windows Ui And Physical Volume Buttons
+	Verify Unit Can Enter And Resume From S3 A Few Times And Audio Remains Functional. (2 cycles are triggered by manual, the other 2 cycles are triggered automatically by Power Plan settings) 
+	Verify Unit Can Enter And Resume From S4 A Few Times And Audio Remains Functional.  (2 cycles are triggered by manual, the other 2 cycles are triggered automatically by Power Plan settings) 
+	Verify Unit Can Successfully Hot Dock And Warm Dock And Audio Remains Functional.
+	Launch Voice Recorder and record some audio with voice.  Verify able to playback the recorded audio in its entirety.
+	Plug In External Headset To Test Machine.  Verify The Default Endpoint For Playback And Recording Should Switch To The External Headset (Headphone + Microphone).  Repeat Playback And Recording Categories On The External Headset.  Verify Volume Controls Work As Expected With The External Device.
+4	Display Adapter
+	"1. Connect Display Port Monitor And Verify The Display Is Intact. (Using HDMI or VGA if unit does not support DP)
+2. Verify All Modes Internal Only, External Only, Clone View And Extended View (Windows + P)
+3. If Uut Is A Mobile Device Or Laptop, Discconect Power And Verify Able To Adjust The Display Brightness
+4. Rotate Screen And Verify Correct Orientation And Rendering."
+	Change the display to a non-native Resolution and verify it functions correctly.  Switch back to the highest supported native resolution and verify it functions correctly.
+	Enter Sleep And Resume. Verify video mode is correct.  Launch Browser And Verify Video Displays Properly.
+	Enter Hibernate And Resume.  Verify video mode is correct.  Launch Browser And Verify Video Displays Properly.
+	Shutdown And Restart, Verify video mode is correct.  Launch Browser And Verify Video Displays Properly.
+	Connect a second monitor.  Verify able to toggle and display to the second monitor.
+5	Video
+	"1. Launch Edge Browser And Open Youtube And Play Any 1-2 Videos And Verify There Are No Noticeable Audio Or Video Glitches, Lip Sync Mismatch, Rebuffering, Or Long Delays Taking Place During Playback.
+2. Verify Able To Pause, Play, And Seek During Content Playback. 
+3. Verify Able To Successfully Close The Browser."
+	"1. Launch The Inbox Movies And Tv App, Search For Oblivion And Play The Sample, 10 Minute Oblivion Movie Preview.  Verify There Are No Noticeable Audio Or Video Glitches, Lip Sync Mismatch, Rebuffering, Or Long Delays Taking Place During Playback.
+2. Verify Able To Pause, Play, And Seek During Content Playback. 
+3. Verify Able To Successfully Close The App."
+10	Camera
+	"1. Launch Camera App And Verify Hardware Or Software Camera Indicator Shows Camera Is On.
+2. Switch To Front Camera And Take A Photo (The Preview Needs Be Mirror When Using Front Camera)
+3. Record A Video
+4. Rotate The Device While Capturing Video
+5. Tap the pause button to pause the recording
+6. Tap the pause button again to resume recording 
+7. Switch To Rear Camera And Test Steps 3-7 Again."
+	"1. From Settings, Adjust Resolution, Change Aspect Ratio, Take Photo And Video.
+2. From Settings, Toggle Video Stabilization On If Available, Record Video. Turn Off, Record Video.
+3. Change Profile Picture Using New Photo Captured From Camera."
+	"1. Close Camera App And Check Hardware Or Software Camera Indicator Shows Camera Is Off
+2. Launch Photo App From Start Menu And Review The Captured Images And Video To Ensure All Photos And Video With Video And Audio Recorded Properly With No Glitches."
+	"1. Launch the Camera App and tap the video button to enter video mode and tap the video button to start recording.
+2. Put the device to sleep and wait 2 minutes and then resume.
+3. After resuming from sleep mode, Verify the video recording was completed a step 2 and is not corrupt.  Verify there were no fatal errors after resumig."
+11	Touchpad
+	"For PTP Touchapd:   Note: Four Finger Gestures Are Only Possible On Newer Hardware. If It Is An Old Hardware, It Is Ok To Skip Four Finger Tests
+1. Perform A Three Finger Swipe Up On Desktop And Verify Task View Appears
+2. Open Few Apps And Perform A Three Finger Swipe Down And Verify Desktop Is Shown
+3. Perform A Three Finger Swipe Left And Right On Desktop And Verify App Switcher Window Is Shown And User Can Switch Apps.
+4. Repeat With Four Finger Swipe Up On Desktop To Enter Task View
+5. Open Few Apps And Perform A Four Finger Swipe Down And Verify Desktop Is Shown"
+	If Supported, Create Multiple Virtual Desktops And Perform A Four Finger Swipe Left And Right And Verify Able To Switch Between Desktops.
+	If The Unit Has A Control To Turn Off The Touchpad, Toggle The Control On And Off To Verify The Touchpad Switches From Enabled And Disabled As Expected.

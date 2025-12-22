@@ -1,0 +1,10 @@
+0	KB Installation and General OS Function
+	Setup the SUT (System Under Test) with the operating system needed for testing
+	Install the test KB on the supported operating systems and confirm successful installation.
+	Verify functionality for Start (boot), shutdown, reboot and battery drain
+	Verify all the devices in Device Manager are correct without any yellow bang
+	Web browsing for internet, intranet, and trusted sites with IE and Edge
+	Verify functionality of Input devices (keyboard, mouse) and speech, touch input
+	Verify no issues with CPU, Memory, Disk usage
+	Verify uninstall of the update package and re-installation work successfully.
+	For all region region OS image -> check if all bundled HP Apps still can be launch after KB installed

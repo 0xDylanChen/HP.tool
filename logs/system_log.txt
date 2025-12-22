@@ -1,0 +1,318 @@
+[13:46:09] Logs cleared.
+[13:46:19] Gathering SUT Info... (This may take 10-20s)
+[13:46:24] Info saved to hp.v\SUT_Output.csv
+[13:46:25] Running HP App Version Check...
+[13:46:25] Traceback (most recent call last):
+[13:46:25] File "C:\HP_Script\hp.s\version_checker.py", line 192, in <module>
+[13:46:25] main()
+[13:46:25] ~~~~^^
+[13:46:25] File "C:\HP_Script\hp.s\version_checker.py", line 121, in main
+[13:46:25] print(f"\u958b\u59cb\u6279\u6b21\u8655\u7406\uff0c\u5171\u627e\u5230 {len(html_files)} \u500b\u5831\u8868...")
+[13:46:25] ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[13:46:25] File "C:\Users\dylan\AppData\Local\Programs\Python\Python314\Lib\encodings\cp1252.py", line 19, in encode
+[13:46:25] return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+[13:46:25] ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[13:46:25] UnicodeEncodeError: 'charmap' codec can't encode characters in position 0-9: character maps to <undefined>
+[13:46:25] Version Check Finished (Check System Log for details).
+[13:46:37] Running HP App Version Check...
+[13:46:37] Traceback (most recent call last):
+[13:46:37] File "C:\HP_Script\hp.s\version_checker.py", line 192, in <module>
+[13:46:37] main()
+[13:46:37] Running HP App Version Check...
+[13:46:37] ~~~~^^
+[13:46:37] File "C:\HP_Script\hp.s\version_checker.py", line 121, in main
+[13:46:37] print(f"\u958b\u59cb\u6279\u6b21\u8655\u7406\uff0c\u5171\u627e\u5230 {len(html_files)} \u500b\u5831\u8868...")
+[13:46:37] ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[13:46:37] File "C:\Users\dylan\AppData\Local\Programs\Python\Python314\Lib\encodings\cp1252.py", line 19, in encode
+[13:46:37] return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+[13:46:37] ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[13:46:37] UnicodeEncodeError: 'charmap' codec can't encode characters in position 0-9: character maps to <undefined>
+[13:46:37] Version Check Finished (Check System Log for details).
+[13:46:37] Traceback (most recent call last):
+[13:46:37] File "C:\HP_Script\hp.s\version_checker.py", line 192, in <module>
+[13:46:38] main()
+[13:46:38] ~~~~^^
+[13:46:38] File "C:\HP_Script\hp.s\version_checker.py", line 121, in main
+[13:46:38] print(f"\u958b\u59cb\u6279\u6b21\u8655\u7406\uff0c\u5171\u627e\u5230 {len(html_files)} \u500b\u5831\u8868...")
+[13:46:38] ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[13:46:38] File "C:\Users\dylan\AppData\Local\Programs\Python\Python314\Lib\encodings\cp1252.py", line 19, in encode
+[13:46:38] return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+[13:46:38] ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[13:46:38] UnicodeEncodeError: 'charmap' codec can't encode characters in position 0-9: character maps to <undefined>
+[13:46:38] Version Check Finished (Check System Log for details).
+[13:51:54] Running HP App Version Check...
+[13:51:54] File "C:\HP_Script\hp.s\version_checker.py", line 138
+[13:51:54] header = f"{'{'Target Name':<35} | {'Mapped HTML Name':<50} | {'Version'}}"
+[13:51:54] ^^^^^^^^^^^
+[13:51:54] SyntaxError: invalid syntax. Is this intended to be part of the string?
+[13:51:54] Version Check Finished (Check System Log for details).
+[13:53:27] Gathering SUT Info... (This may take 10-20s)
+[13:53:32] Info saved to hp.v\SUT_Output.csv
+[13:53:36] Running HP App Version Check...
+[13:53:36] C:\HP_Script\hp.s\version_checker.py:171: SyntaxWarning: "\{" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\{"? A raw string is also an option.
+[13:53:36] print(f"   -> Moving to: [bin\{archive_target_name}]")
+[13:53:36] Processing 1 reports...
+[13:53:36] Working: [W70.html] -> [W70.txt]... Done.
+[13:53:36] -> Moving to: [bin\W70_01.html]
+[13:53:36] 
+[13:53:36] Batch processing complete!
+[13:53:36] Version Check Completed. Reports saved in hp.v/
+[13:58:51] Gathering SUT Info... (This may take 10-20s)
+[13:58:56] Info saved to hp.v\SUT_Output.csv
+[13:58:59] Running HP App Version Check...
+[13:58:59] C:\HP_Script\hp.s\version_checker.py:189: SyntaxWarning: "\{" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\{"? A raw string is also an option.
+[13:58:59] print(f"   -> Moving to: [bin\{archive_target_name}]")
+[13:59:00] Processing 1 reports...
+[13:59:00] Working: [W70.html] -> [W70.txt]... [Debug] Found 71 data rows.
+[13:59:00] [Debug] Extracted 68 items. First 3: ['Alcor Micro Smart Card Reader Driver-2024', 'All Docks - Ethernet Driver', 'All Docks - Ethernet Driver(Intel)']
+[13:59:00] Done.
+[13:59:00] -> Moving to: [bin\W70_02.html]
+[13:59:00] 
+[13:59:00] Batch processing complete!
+[13:59:00] Version Check Completed. Reports saved in hp.v/
+[14:02:19] Running HP App Version Check...
+[14:02:19] C:\HP_Script\hp.s\version_checker.py:205: SyntaxWarning: "\{" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\{"? A raw string is also an option.
+[14:02:19] print(f"   -> Moving to: [bin\{archive_target_name}]")
+[14:02:20] Processing 2 reports...
+[14:02:20] Working: [W70_02.html] -> [W70_02.txt]... [Debug] First row structure (Indices):
+[14:02:20] [0] 685440
+[14:02:20] [1] Alcor Micro Smart Card Reader Driver-2024
+[14:02:20] [2] P014Q5-B2E
+[14:02:20] [3] Preinstall
+[14:02:20] [4] 1.10.7.1001
+[14:02:20] [5] A
+[14:02:20] [6] 1
+[14:02:20] [7]
+[14:02:20] [8]
+[14:02:20] [9] Workflow Complete
+[14:02:20] [10] Driver - I/O
+[14:02:20] [11] 100
+[14:02:20] [12] Ready For Test
+[14:02:20] [13] CRD
+[14:02:20] [14]
+[14:02:20] [15]
+[14:02:20] [16]
+[14:02:20] [17] 22
+[14:02:20] [18] 1
+[14:02:20] [19] Driver
+[14:02:20] [20] 1
+[14:02:20] [21] 0
+[14:02:20] [22] 0
+[14:02:20] [23]
+[14:02:20] [24] IRS
+[14:02:20] [Debug] Extracted 68 items. First 3:
+[14:02:20] - Alcor Micro Smart Card Reader Driver-2024: 1.10.7.1001
+[14:02:20] - All Docks - Ethernet Driver: 11.20.805.2025
+[14:02:20] - All Docks - Ethernet Driver(Intel): 2.1.5.7
+[14:02:20] Done.
+[14:02:20] -> Moving to: [bin\W70_02_01.html]
+[14:02:20] Working: [W99.html] -> [W99.txt]... [Debug] First row structure (Indices):
+[14:02:20] [0] 687953
+[14:02:20] [1] All Docks - Ethernet Driver
+[14:02:20] [2] P015VV-B2V
+[14:02:20] [3] Preinstall
+[14:02:20] [4] 11.20.805.2025
+[14:02:20] [5] R
+[14:02:20] [6] 3
+[14:02:20] [7]
+[14:02:20] [8]
+[14:02:20] [9] Workflow Complete
+[14:02:20] [10] Driver - Network
+[14:02:20] [11] 100
+[14:02:20] [12] RTM Complete
+[14:02:20] [13]
+[14:02:20] [14]
+[14:02:20] [15]
+[14:02:20] [16]
+[14:02:20] [17] 1
+[14:02:20] [18] 1
+[14:02:20] [19] Driver
+[14:02:20] [20] 0
+[14:02:20] [21] 0
+[14:02:20] [22] 0
+[14:02:20] [23]
+[14:02:20] [24] IRS
+[14:02:20] [Debug] Extracted 63 items. First 3:
+[14:02:20] - All Docks - Ethernet Driver: 11.20.805.2025
+[14:02:20] - All Docks - Ethernet Driver(Intel): 2.1.5.7
+[14:02:20] - BCU FPR F10 Reset: 2016.12.22
+[14:02:20] Done.
+[14:02:20] -> Moving to: [bin\W99_01.html]
+[14:02:20] 
+[14:02:20] Batch processing complete!
+[14:02:20] Version Check Completed. Reports saved in hp.v/
+[14:05:14] Running HP App Version Check...
+[14:05:14] C:\HP_Script\hp.s\version_checker.py:205: SyntaxWarning: "\{" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\{"? A raw string is also an option.
+[14:05:14] print(f"   -> Moving to: [bin\{archive_target_name}]")
+[14:05:15] Processing 1 reports...
+[14:05:15] Working: [W99_01.html] -> [W99_01.txt]... [Debug] First row structure (Indices):
+[14:05:15] [0] 687953
+[14:05:15] [1] All Docks - Ethernet Driver
+[14:05:15] [2] P015VV-B2V
+[14:05:15] [3] Preinstall
+[14:05:15] [4] 11.20.805.2025
+[14:05:15] [5] R
+[14:05:15] [6] 3
+[14:05:15] [7]
+[14:05:15] [8]
+[14:05:15] [9] Workflow Complete
+[14:05:15] [10] Driver - Network
+[14:05:15] [11] 100
+[14:05:15] [12] RTM Complete
+[14:05:15] [13]
+[14:05:15] [14]
+[14:05:15] [15]
+[14:05:15] [16]
+[14:05:15] [17] 1
+[14:05:15] [18] 1
+[14:05:15] [19] Driver
+[14:05:15] [20] 0
+[14:05:15] [21] 0
+[14:05:15] [22] 0
+[14:05:15] [23]
+[14:05:15] [24] IRS
+[14:05:15] [Debug] Extracted 63 items. First 3:
+[14:05:15] - All Docks - Ethernet Driver: 11.20.805.2025
+[14:05:15] - All Docks - Ethernet Driver(Intel): 2.1.5.7
+[14:05:15] - BCU FPR F10 Reset: 2016.12.22
+[14:05:15] Done.
+[14:05:15] -> Moving to: [bin\W99_01_01.html]
+[14:05:15] 
+[14:05:15] Batch processing complete!
+[14:05:15] Version Check Completed. Reports saved in hp.v/
+[14:11:43] Running HP App Version Check...
+[14:11:43] File "C:\HP_Script\hp.s\version_checker.py", line 20
+[14:11:43] if clean_line and not clean_line.startswith("\u7b56\u7565 A\uff1a\u52d5\u614b\u5c0b\u627e\u8868\u982d\u7d22\u5f15 (\u6bd4\u786c\u7de8\u78bc\u66f4\u7a69\u5065)
+[14:11:43] ^
+[14:11:43] SyntaxError: unterminated string literal (detected at line 20)
+[14:11:43] Version Check Finished (Check System Log for details).
+[14:12:08] Running HP App Version Check...
+[14:12:08] File "C:\HP_Script\hp.s\version_checker.py", line 20
+[14:12:08] if clean_line and not clean_line.startswith("\u7b56\u7565 A\uff1a\u52d5\u614b\u5c0b\u627e\u8868\u982d\u7d22\u5f15 (\u6bd4\u786c\u7de8\u78bc\u66f4\u7a69\u5065)
+[14:12:08] ^
+[14:12:08] SyntaxError: unterminated string literal (detected at line 20)
+[14:12:08] Version Check Finished (Check System Log for details).
+[14:12:42] Running HP App Version Check...
+[14:12:42] File "C:\HP_Script\hp.s\version_checker.py", line 20
+[14:12:42] if clean_line and not clean_line.startswith("\u7b56\u7565 A\uff1a\u52d5\u614b\u5c0b\u627e\u8868\u982d\u7d22\u5f15 (\u6bd4\u786c\u7de8\u78bc\u66f4\u7a69\u5065)
+[14:12:42] ^
+[14:12:42] SyntaxError: unterminated string literal (detected at line 20)
+[14:12:42] Version Check Finished (Check System Log for details).
+[14:14:11] Running HP App Version Check...
+[14:14:11] File "C:\HP_Script\hp.s\version_checker.py", line 236
+[14:14:11] new_path = os.path.join(archive_dir
+[14:14:11] ^
+[14:14:11] SyntaxError: '(' was never closed
+[14:14:11] Version Check Finished (Check System Log for details).
+[14:14:17] Running HP App Version Check...
+[14:14:17] File "C:\HP_Script\hp.s\version_checker.py", line 236
+[14:14:17] new_path = os.path.join(archive_dir
+[14:14:17] ^
+[14:14:17] SyntaxError: '(' was never closed
+[14:14:17] Version Check Finished (Check System Log for details).
+[14:15:35] Gathering SUT Info... (This may take 10-20s)
+[14:15:39] Info saved to hp.v\SUT_Output.csv
+[14:15:44] Running HP App Version Check...
+[14:15:44] Loaded 28 targets.
+[14:15:44] No .html files found.
+[14:15:44] Version Check Finished (Check System Log for details).
+[14:16:16] Running HP App Version Check...
+[14:16:16] Loaded 28 targets.
+[14:16:16] No .html files found.
+[14:16:16] Version Check Finished (Check System Log for details).
+[14:16:19] Running HP App Version Check...
+[14:16:19] Loaded 28 targets.
+[14:16:19] No .html files found.
+[14:16:19] Version Check Finished (Check System Log for details).
+[14:16:45] Running HP App Version Check...
+[14:16:46] Loaded 28 targets.
+[14:16:46] Found 1 HTML reports.
+[14:16:46] 
+[14:16:46] Processing: W70.html...
+[14:16:46] -> Generated: W70.txt
+[14:16:46] -> Archiving to: bin\W70.html
+[14:16:46] 
+[14:16:46] Batch processing complete!
+[14:16:46] Version Check Finished (Check System Log for details).
+[14:21:37] Gathering SUT Info... (This may take 10-20s)
+[14:21:42] Info saved to hp.v\SUT_Output.csv
+[14:21:45] Running HP App Version Check...
+[14:21:45] Loaded 28 targets.
+[14:21:45] No .html files found.
+[14:21:45] Version Check Finished (Check System Log for details).
+[14:22:05] Running HP App Version Check...
+[14:22:06] Loaded 28 targets.
+[14:22:06] Found 1 HTML reports.
+[14:22:06] 
+[14:22:06] Processing: W70.html...
+[14:22:06] -> Generated: W70.txt
+[14:22:06] -> Archiving to: bin\W70_01.html
+[14:22:06] 
+[14:22:06] Batch processing complete!
+[14:22:06] Version Check Finished (Check System Log for details).
+[14:32:52] Running HP App Version Check...
+[14:32:53] Loaded 28 targets.
+[14:32:53] No .html files found.
+[14:32:53] Version Check Finished (Check System Log for details).
+[14:33:10] Running HP App Version Check...
+[14:33:11] Loaded 28 targets.
+[14:33:11] Found 1 HTML reports.
+[14:33:11] 
+[14:33:11] Processing: W70.html...
+[14:33:11] -> Generated: W70.txt
+[14:33:11] -> Archiving to: bin\W70_04.html
+[14:33:11] 
+[14:33:11] Batch processing complete!
+[14:33:11] Version Check Finished (Check System Log for details).
+[14:48:46] Running HP App Version Check...
+[14:48:46] Loaded 28 targets.
+[14:48:46] Found 1 HTML reports.
+[14:48:46] 
+[14:48:46] Processing: W70.html...
+[14:48:46] -> Generated: W70.txt
+[14:48:46] -> Archiving to: bin\W70_02.html
+[14:48:46] 
+[14:48:46] Batch processing complete!
+[14:48:46] Version Check Finished (Check System Log for details).
+[14:54:16] Running HP App Version Check...
+[14:54:16] Loaded 28 targets.
+[14:54:16] Found 1 HTML reports.
+[14:54:16] 
+[14:54:16] Processing: W70.html...
+[14:54:16] -> Generated: W70.txt
+[14:54:16] -> Archiving to: bin\W70_01.html
+[14:54:16] 
+[14:54:16] Batch processing complete!
+[14:54:16] Report loaded from W70.txt
+[14:54:20] Gathering SUT Info... (This may take 10-20s)
+[14:54:25] Info saved to hp.v\SUT_Output.csv
+[14:54:45] Running HP App Version Check...
+[14:54:45] Loaded 28 targets.
+[14:54:45] No .html files found in project root.
+[14:54:45] Version Check Finished (Check System Log for details).
+[14:54:54] Running HP App Version Check...
+[14:54:54] Loaded 28 targets.
+[14:54:54] Found 1 HTML reports.
+[14:54:54] 
+[14:54:54] Processing: W70_01.html...
+[14:54:54] -> Generated: W70.txt
+[14:54:54] -> Archiving to: bin\W70_01_01.html
+[14:54:54] 
+[14:54:54] Batch processing complete!
+[14:54:54] Report loaded from W70.txt
+[14:54:55] Running HP App Version Check...
+[14:54:55] Loaded 28 targets.
+[14:54:55] No .html files found in project root.
+[14:54:55] Version Check Finished (Check System Log for details).
+[14:56:39] Gathering SUT Info... (This may take 10-20s)
+[14:56:43] Info saved to hp.v\SUT_Output.csv
+[15:31:50] Scanning testcase.txt for automation candidates...
+[15:41:55] Scanning 2 files...
+[15:42:06] Scanning 2 files...
+[15:42:20] Executing automation for 1 files...
+[15:42:26] Executing automation for 1 files...
+[15:42:30] Automation Complete.
+[15:42:36] Automation Complete.
+[09:54:19] Executing MPM Action: GET_ORIG...
+[09:54:19] Result:
+Launched get-original...

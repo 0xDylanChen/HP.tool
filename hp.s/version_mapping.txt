@@ -1,0 +1,29 @@
+HP Hotkey Support
+HPSA (HP Support Assistant) 
+myHP
+HP Jumpstarts
+HP Privacy Settings
+HP Programmable Key
+HP Interactive Light
+HP Easy Clean (HPEC)
+HP Power Manager (HPPM)
+HSA Fusion (Fusion version)
+
+HP Sure Click
+HP Sure Sense 
+HP Wolf Security
+HP Sure Recover
+HP Sure Run Module
+HP Presence Aware Provider
+HP Auto Lock Awake
+HP Connection Optimizer
+HP Documentation
+HP Client Security Manaegr
+HP Notifications
+HP PC Hardware Diagnostics Windows
+HP Quick Drop
+HP Security Update Serivce
+HP System Information
+HP Dock Accessory WMI Provider
+HP TechPulse
+HP Quick Touch

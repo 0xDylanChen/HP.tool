@@ -1,0 +1,265 @@
+	▼ KB Installation						
+0	KB Installation and General OS Function				365		
+	Setup the SUT (System Under Test) with the operating system needed for testing	●	240	To Do			P1
+	Install the test KB on the supported operating systems and confirm successful installation.	●	30	To Do			P1
+	Verify functionality for Start (boot), shutdown, reboot and battery drain	●	20	To Do			P1
+	Verify all the devices in Device Manager are correct without any yellow bang	●	5	To Do			P1
+	Web browsing for internet, intranet, and trusted sites with IE and Edge	●	10	To Do			P1
+	Verify functionality of Input devices (keyboard, mouse) and speech, touch input	●	10	To Do			P1
+	Verify no issues with CPU, Memory, Disk usage	●	10	To Do			P1
+	Verify uninstall of the update package and re-installation work successfully.	●	30	To Do			P1
+	For all region region OS image -> check if all bundled HP Apps still can be launch after KB installed	●	10	To Do			P1
+1	Compatibility Testing				45	4	
+	Go To Start Menu (Eg: One Note), Buttons, Task Bar, Open All Preinstalled Apps And Verify The Expected Behavior.  Verify The Lines Are Properly Aligned, No Buttons/Apps Are Over Lapped.  User Should Be Able Read The Apps And Menu With Out Any Issues	●	30	NA	Pure OS - 23H2	4	P3
+	Open File Explorer (Explorer.Exe) > Open Pictures Folder And Verify That You Can Peruse Folders And Open Files As Expected.	●	5	NA		4	P3
+	Verify Able To Launch The Application By "Search Box"/All Apps View, including HP APPs when OS is DASH image.	●	5	NA		4	P3
+	Verify Able To Drag And Drop From Mfu/"All Apps" To Tile Grid View, including HP APPs when OS is DASH image.	●	5	NA		4	P3
+2	Audio				70	1	
+	Launch The Audio Control Panel >   Right-Click On The Bottom Right “Audio” Icon > Click On “Playback Devices” > Play Test Sound On Internal Speaker.  Verify Volume Control With The Windows Ui And Physical Volume Buttons	●	10	To Do		1	P1
+	Verify Unit Can Enter And Resume From S3 A Few Times And Audio Remains Functional. (2 cycles are triggered by manual, the other 2 cycles are triggered automatically by Power Plan settings) 	●	15	To Do		1	P2
+	Verify Unit Can Enter And Resume From S4 A Few Times And Audio Remains Functional.  (2 cycles are triggered by manual, the other 2 cycles are triggered automatically by Power Plan settings) 	●	15	To Do		1	P2
+	Verify Unit Can Successfully Hot Dock And Warm Dock And Audio Remains Functional.	●	5	To Do		1	P2
+	Launch Voice Recorder and record some audio with voice.  Verify able to playback the recorded audio in its entirety.	●	5	To Do		1	P3
+	Plug In External Headset To Test Machine.  Verify The Default Endpoint For Playback And Recording Should Switch To The External Headset (Headphone + Microphone).  Repeat Playback And Recording Categories On The External Headset.  Verify Volume Controls Work As Expected With The External Device.	●	20	To Do		1	P3
+3	Battery				35	2	
+	If Dc Mode Is Supported, Plug In Ac Power.  Verify Uut Can Be Charged By The Charger, Check Battery Icon And Any Indicators (E.G. Led Or Specified By Manufacturing) Are Expected.	●	30	To Do		2	P1
+	Switch between AC and DC a few times and verify unit handles power transitions fine.	●	5	To Do		2	P1
+4	Display Adapter				100	1	
+	"1. Connect Display Port Monitor And Verify The Display Is Intact. (Using HDMI or VGA if unit does not support DP)
+2. Verify All Modes Internal Only, External Only, Clone View And Extended View (Windows + P)
+3. If Uut Is A Mobile Device Or Laptop, Discconect Power And Verify Able To Adjust The Display Brightness
+4. Rotate Screen And Verify Correct Orientation And Rendering."	●	20	To Do		1	P1
+	Change the display to a non-native Resolution and verify it functions correctly.  Switch back to the highest supported native resolution and verify it functions correctly.	●	5	To Do		1	P2
+	Enter Sleep And Resume. Verify video mode is correct.  Launch Browser And Verify Video Displays Properly.	●	15	To Do		1	P2
+	Enter Hibernate And Resume.  Verify video mode is correct.  Launch Browser And Verify Video Displays Properly.	●	15	To Do		1	P2
+	Shutdown And Restart, Verify video mode is correct.  Launch Browser And Verify Video Displays Properly.	●	30	To Do		1	P2
+	Connect a second monitor.  Verify able to toggle and display to the second monitor.	●	15	To Do		1	P2
+5	Video				45	1	
+	"note: prepare USB drive. copy sample video from sharepoint
+sample video: SVL sharepoint > documents > test plan template > SLFT > sample video"						
+	"1. Launch Edge Browser And Open Youtube And Play Any 1-2 Videos And Verify There Are No Noticeable Audio Or Video Glitches, Lip Sync Mismatch, Rebuffering, Or Long Delays Taking Place During Playback.
+2. Verify Able To Pause, Play, And Seek During Content Playback. 
+3. Verify Able To Successfully Close The Browser."	●	30	To Do		1	P2
+	"1. Launch The Inbox Movies And Tv App, Search For Oblivion And Play The Sample, 10 Minute Oblivion Movie Preview.  Verify There Are No Noticeable Audio Or Video Glitches, Lip Sync Mismatch, Rebuffering, Or Long Delays Taking Place During Playback.
+2. Verify Able To Pause, Play, And Seek During Content Playback. 
+3. Verify Able To Successfully Close The App."	●	15	To Do		1	P1
+6	Ethernet				12	2	
+	"Open a cmd prompt type ""ncpa.cpl"".  Right click to disable/enable the Ethernet device and verify that the Ethernet interface and status is as expected.
+Verify the adapter name is correct and the adapter comes back after enable (icon is grayed out during disable and colorful after enable)"	●	4	To Do		2	P2
+	Connect an Ethernet cable (should have internet connectivity).  Open PowerShell and Run "Get-NetAdapter".  Verify the Ethernet adapter is listed in the "Get-NetAdapter" output.	●	4	To Do		2	P2
+	Run "ping internetbeacon.msedge.net /4" (alternately, ping another system on the local network or the default gateway)(This specifies the IPv4 connection, using /6 would specify the IPv6 connection.).  Standby/resume the system and run "Test-NetConnection" from the PowerShell window.   Verify the ping succeeds (should get a reply from the destination server) and ping is successful after standby/resume test.	●	4	To Do		2	P1
+	"Check LAN/WAN Auto Switching, this feature Enable/Disable in BIOS F10 setup menu.
+Step:
+1. When LAN Cable is plugged in the system switches to Lan with the Wi-fi turned OFF.
+2. When LAN Cable is plugged in the system switches to LAN with Wi-Fi in connected state."	●	3	To Do		2	P3
+7	Wlan				30	2	
+	"note: prepare USB drive. copy sample video from sharepoint
+sample video: SVL sharepoint > documents > test plan template > SLFT > sample video"						
+	"1. Open Settings --> Network And Internet-->Wifi 
+2. Verify Default Wi-Fi Radio State Is On, Uut Can Discover Nearby Wireless Access Points (Check View Available Networks Ui)
+3. Connect To An Open Wireless Station  (If 5 Ghz Network Is Available, Please Test On Both 2.4 Ghz And 5 Ghz)"	●	5	To Do		2	P1
+	"1. Settings --> Network And Internet --> Wi-Fi, Turn Off Wi-Fi
+2. Enter Standby And Resume
+3. Settings --> Network And Internet --> Wi-Fi, Verify Wi-Fi Radio State is still Off.
+4. Settings --> Network And Internet --> Wi-Fi, Turn On Wi-Fi"	●	10	To Do		2	P2
+	"1. Settings --> Network And Internet --> Airplane Mode, Turn On Airplane Mode And Ensure Wi-Fi Turns Off In 5 Seconds. Turn Wi-Fi Back On And Ensure Shows Networks And Connects To The Ap.
+2. Sleep And Resume And Verify Able To Connect Back To The Network."	●	5	To Do		2	P2
+	Disable/Enable The Adapter From The Device Manager And Verify Able To Connect Again After Re-Enabling The Device.	●	10	To Do		2	P2
+8	Bluetooth				145	2	
+	Install the latest Bluetooth driver for your device by either manually installing the latest driver or installing from Windows Update.  Ensure Bluetooth Trace Logging Is Enabled At The Beginning Of The Test Case And Then Disabled After The Failure Occurrs.	●	30	To Do		2	P2
+	"For Notebooks:
+1.  Launch Action Center And Toggle The Bluetooth Radio On.  
+2.  Right Click The Bluetooth Icon And Select Go To Settings To Open The Bluetooth Settings Page And From This Page Toggle The Radio Off And On."	●	5	To Do		2	P2
+	"For Notebooks:
+1.  With The Bt Radio On, Verify Any Discoverable Bluetooth Devices Should Be Discovered By Uut And Previously Paired Devices Should Auto Connect With The Uut.  
+2.  Verify Devices Show As Connected Only When The Device Is Actually Being Used I.E. A Mouse, Speaker, Headset, Keyboard or using NB/DT to pair then test data transfer. If The Previously Paired Device Is Not In Use, Its Connection Status Will Show As Paired.  
+3.  Reboot System And Ensure Bluetooth Setting Remains The Same As Prior To Reboot"	●	20	To Do		2	P1
+	"1.  Launch Action Center, Confirm Bluetooth Is On, Turn Airplane Mode On And Ensure Bluetooth Turns Off Within 5 Seconds. 
+2.  With Airplane Mode Still On, Toggle Bluetooth On To Confirm It Still Works When Other Wireless Radios Are Turned Off."	●	5	To Do		2	P2
+	"1.  Verify Any Discoverable Bluetooth Devices Are Found And Previously Paired Devices Should Auto Connect With The Uut.  
+2.  Verify Devices Show As Connected Only When The Device Is Actually Being Used I.E. A Mouse Or Keyboard, If The Previously Paired Device Is Not In Use, Its Connection Status Will Show As Paired."	●	10	To Do		2	P2
+	"1.  Confirm All Of The Same Basic Functionality After Putting The Sut Into Standby Mode And Resuming.  
+2.  Verify Devices Autoconnect After Resuming Or Restarting.  Open Bluetooth Settings And “Remove Device” Aka Un-Pair Any Of The Currently Paired Peripherals To Confirm Deleting A Pairing Is Successful."	●	20	To Do		2	P2
+	"1.  Pair A Bluetooth Speaker Or Headset.
+2.  Play A Media Playlist With At Least 3 Songs In The List.  Confirm The Playlist Media Data Correctly Shows The Track Title, Artist, Current Time & Position.  Verify No Glitches In The Audio Stream."	●	20	To Do		2	P2
+	Power Off The Connected Bluetooth Peripheral, Wait 10 Seconds, Power It Back On And Confirm It Automatically Reconnects To The Uut And The Music Playback Can Be Easily Resumed.	●	5	To Do		2	P2
+	"Note:  The following are known issues that you may cause glitches in Audio playback and do not need new OBS:
+a.  The Bluetooth settings page is open
+b.  There are lots of Bluetooth peripherals (>10) connected to or nearby the UUT
+c.  If a wired headset is also connected to the UUT, the systems priority for it will be higher than Bluetooth.  Note: if the user manually changes the default playback device, it will override automatic selection of the Bluetooth device upon automatic connection"						
+	"1.  Pair A Bt Sharing Capable Phone To The Uut.  If Open, Close The Bluetooth Settings Page After Pairing So It Doesn’T Interfere With The File Transfer Rate.
+2.  From The Uut, Navigate To A Content File, Music File Or Picture, Preferably .Mp3, .Jpg And Right Click And Choose ""Send To"" -> ""Bluetooth Device"", Follow The Inline Instructions.
+3.  Accept Any Sharing Consent Notifications On The Receiving Phone.  Once The File Is Successfully Transferred, Confirm It Opens Correctly"	●	30	To Do		2	P3
+9	Storage				30	3	
+	"1. Verify Copy And Delete Files On Internal And External Storage Devices.
+2. Verify Format Functionality On Storage Device."	●	15	To Do		3	P1
+	Verify Sd Cards Are Functional On Insertion And After S3/S4 Events.  Remove the SD Card and Verify Removed As Expected	●	15	To Do		3	P2
+10	Camera				60	1	
+	"1. Launch Camera App And Verify Hardware Or Software Camera Indicator Shows Camera Is On.
+2. Switch To Front Camera And Take A Photo (The Preview Needs Be Mirror When Using Front Camera)
+3. Record A Video
+4. Rotate The Device While Capturing Video
+5. Tap the pause button to pause the recording
+6. Tap the pause button again to resume recording 
+7. Switch To Rear Camera And Test Steps 3-7 Again."	●	20	To Do		1	P1
+	"1. From Settings, Adjust Resolution, Change Aspect Ratio, Take Photo And Video.
+2. From Settings, Toggle Video Stabilization On If Available, Record Video. Turn Off, Record Video.
+3. Change Profile Picture Using New Photo Captured From Camera."	●	20	To Do		1	P2
+	"1. Close Camera App And Check Hardware Or Software Camera Indicator Shows Camera Is Off
+2. Launch Photo App From Start Menu And Review The Captured Images And Video To Ensure All Photos And Video With Video And Audio Recorded Properly With No Glitches."	●	10	To Do		1	P2
+	"1. Launch the Camera App and tap the video button to enter video mode and tap the video button to start recording.
+2. Put the device to sleep and wait 2 minutes and then resume.
+3. After resuming from sleep mode, Verify the video recording was completed a step 2 and is not corrupt.  Verify there were no fatal errors after resumig."	●	10	To Do		1	P2
+11	Touchpad				30	1	
+	"For PTP Touchapd:   Note: Four Finger Gestures Are Only Possible On Newer Hardware. If It Is An Old Hardware, It Is Ok To Skip Four Finger Tests
+1. Perform A Three Finger Swipe Up On Desktop And Verify Task View Appears
+2. Open Few Apps And Perform A Three Finger Swipe Down And Verify Desktop Is Shown
+3. Perform A Three Finger Swipe Left And Right On Desktop And Verify App Switcher Window Is Shown And User Can Switch Apps.
+4. Repeat With Four Finger Swipe Up On Desktop To Enter Task View
+5. Open Few Apps And Perform A Four Finger Swipe Down And Verify Desktop Is Shown"	●	10	To Do		1	P1
+	If Supported, Create Multiple Virtual Desktops And Perform A Four Finger Swipe Left And Right And Verify Able To Switch Between Desktops.	●	10	To Do		1	P2
+	If The Unit Has A Control To Turn Off The Touchpad, Toggle The Control On And Off To Verify The Touchpad Switches From Enabled And Disabled As Expected.	●	10	To Do		1	P2
+12	Usb2, Usb3, Usb Type C				60	3	
+	Verify Usb2 and USB3 and Type C Devices Can Be Detected And Used, Such Like :Usb Devices (Keyboard, Mouse, Memory Stick, External Hard Disk, Webcam, Headphones, Printer, Scanner Etc)	●	20	To Do		3	P1
+	Verify All Usb Devices Function As Expected After Sleep And Resume	●	15	To Do		3	P2
+	Plug In A Chargeable Device To A Usb Charge Port And Verify Device Is Able To Charge Fine.	●	15	To Do		3	P2
+	Flip Or Reverse The Orientation Of The Usb Type-C Cable And Verify Device Is Recognized And Fuctional.	●	10	To Do		3	P2
+13	Windows Hello  (For Supported Platforms Only)				30	4	
+	[Webcam] Windows Hello - Face Recognition	●	10	NA	NA	4	P3
+	Boot up and log in "A" user account with Admin role, setup Face Recognition in Windows Hello	●		NA		4	P3
+	Log out and check Windows Hello icon shows up in lock screen (a eye icon on the top-center) and try to unlock system with Face Recognition	●		NA		4	P3
+	[ToF] HP Auto Lock & Awake Integration Test - System Wake Up and Windows Hello Log In Combination Test (If your system supports IR camera)	●	10	NA		4	P3
+	Enroll Windows Hello Face Recognition feature.	●		NA		4	P3
+	Your system should launch Windows Hello and log in by face recognition.	●		NA		4	P3
+	"Note: 
+1. If your system supports IR camera, please enroll Windows Hello Face Recognition as well.
+2. Before testing, make sure all sensors are enable in system. You can use SensorInfo to check all sensors status. (Download from Microsoft Store). Please use professional tool such as Light Meter or the app on mobile phone to measure the ambient light illumination.
+3. If you have 2 or more Time-of-Flight enabled systems are beside your UUT and pointing to you, Time-of-Flight cameras may disturb each other's measurements and impact performance.
+4. According to HP Sensor Spec v0.4.1, Walk away lock distance = 1100mm and Wake on presence distance = 1000mm; Supported mode: Clamshell mode and Stand mode.
+5. Note: The duration before dimming may be up to 20 seconds if there is a static object left in the FoV. Even the ""Time to Dim (s) setting"" is below 20 seconds. (Sensor algorithm). That is why the slider has a + after the number of the second, it is by-designed. (Please see the attachment for details.)"						
+	[FPR] Login By Fingerprint Authentication-Windows Hello	●	10	P		4	P3
+	"(Support Platform or SKU only)
+If the platform support IR camera and Finger Print Reader(FPR), please enable Windows Hello function. Set up the PIN, FPR and IR Camera for log in system."	●		P		4	P3
+	"Enable Windows Hello, and use Windows Hello Log-in the system. Need to cover--
+Scenario 1: Setting Password and PIN to log-in.
+Scenario 2: Setting Fingerprint(if support) and use fingerprint log-in.
+Scenario 3: Setting Face recognition(If support IR camera) and use face recognition log-in."	●		P		4	P3
+14	Modern Standby 				210	3	
+	Function: Connected standby enable/disable						
+	"Test coverage: Must cover all supported WLAN, WWAN, internal LAN
+Modern standby Disconnected project. (Confirm with Test Lead)
+Test cases for Internet connectivity during MS are omitted."						
+	Clear Event Viewer Before Testing.	●	5	To Do		3	P2
+	Load Bios Default. Bios Default Is "Connected Standby  Enable". Base On Project Design). Boot To Os And Type Command To Make Sure Connected Standby Enable In Project. Manual Enter Cs Mode. Check System Event Viewer. Find The Event "Source: Kernal Power";" Event Id 506: Check The Information Is Distribute System Enter Connected Standby. Make Sure Date And Time Match This Event.	●	10	To Do		3	P2
+	Test In System Only Mode. Check Below Function Under Ac/Dc Mode. Using Image Default Setting. Enter Ms Via Timeout And Idle In Ms More Than 10 Minutes. Resume Ms Via Windows Key Or Power Button.Check System Resume From Ms Mode Without Any Error	●	15	To Do		3	P2
+	Attach Supported System Base/Dock  Check Below Function Under Ac/Dc Mode. Using Image Default Setting. Enter Ms Via Timeout And Idle In Ms More Than 10 Minutes. Resume Ms Via Windows Key Or Power Button.Check System Resume From Ms Mode Without Any Error	●	15	To Do		3	P2
+	Enter Ms Mode In System Only /Dc Only Mode. Hot Attach To Supported Dock/ Supported System Base. System Will Turn On Display If Dock/System Base  Have Power Supply Function.	●	10	To Do		3	P1
+	Enter Ms Mode In Ac Mode/Attached With Supported Dock And Supported System Base. Detach System Base/Dock During Ms. Check Disply Will Turn On.	●	10	To Do		3	P1
+	Function:MS Wake up event check						
+	"Testing purpose: A. Keyboard and touchpad. B.USB keyboard and mouse. C.Bluetooth keyboard and mouse.D Lid open(if applicable). E. BT Pen/ Top pen button. Above event can wake up display from Modern standby. 
+Expected Resume time < 1 sec
+"						
+	Enter Ms Mode In System Only/Dc Mode. Check All Wake Up Event Can Wake Up From Ms	●	10	To Do		3	P2
+	Enter Ms Mode In System Only/Ac Mode. Check All Wake Up Event Can Wake Up From Ms	●	10	To Do		3	P2
+	Function:Power button behavior						
+	"Testing purpose:
+Toggle  Connected standby when Button Pressed < 2 seconds
+Show ""slide to power down"" if button Press >2 but <10 seconds
+System shutdown if held power button >= 10 seconds.
+System can boot to system without panel flicker after force shutdown. "						
+	Test In Ac/Tablet Mode. Press Power Button <2 Seconds When Online Video Playback. Test In Dc/Tablet Mode.Press Power Button>2 But <10 Seconds Seconds When Online Video Playback. Test In Dc And Ac/Tablet Mode Press Power Button >10 Seconds When Online Video Playback.	●	10	To Do		3	P2
+	Attach All Supported Dock/System Base/Jacket And Reboot System. Press Power Button <2 Seconds With All Supported Dock. Press Power Button >2 But <10  Seconds With All Supported Dock. System Shutdown If Held Power Button >= 10 Seconds.	●	10	To Do		3	P2
+	Function: Push mail and file download during MS						
+	"Testing purpose: 
+1. An audio notification is if the user receives email from one of their Favorites using the built-in Mail app.
+2. Apps that are not on the lock screen cannot generate audio notifications during modern standby.
+3. If the user has muted audio through the Settings menu, the audio alert does not play.
+4. Quiet hours allows the user to define a period of time each day during which notifications and background tasks are suppressed. Users can configure Quiet hours through Cortana or click the Quiet hours tile icon in the Action center to turn it on or off.
+5. For Modern standby disconnected platform can't receive incoming email, VOIP calls or news articles."						
+	Connect To Internet Via Wifi/Dc Mode. Enter Ms In Test Unit. Send Several Mail To Test Unit And Check Audio Notification Alarm And Display Still Off. Wake Up The System And Check Lock Screen Log These Information.	●	10	To Do		3	P3
+	Connect To Internet Via Internal Lan. Download Large File From Website And Do Windows Update At Test Unit. Check Mail Alarm Can Be Observed In Ms Dc Mode. Esume From Ms After 5 Minutes Check Lock Screen Have Mail Information And File Down Completely Or Download Progress Increase.	●	15	To Do		3	P3
+	Quiet Hour: Click The "Action Center "And Turn On/Off The "Quiet Hours" Title. Check Instant Message And Voip Call Will Not Wake Up Screen. No Audio Notification.	●	10	To Do		3	P3
+	Function: Roaming Connectivity(WLAN)						
+	"Testing purpose:Ensure that the system will automatically connect to previously used Wi-Fi networks during MS as the user moves the system between home, work.
+Notice: This section only for MSC. Can't perform in MSD condition"						
+	Manually Move The System Near Each Wi-Fi Access Point And Connect To Each Network For A Few Minutes With The Screen On And Validate That Internet Connectivity Is Functional." Move System Form Network A To Network B During Ms(Dc Mode). Wait 5 Minutes And Check Push Mail Still Functional.	●	10	To Do		3	P3
+	Turn On Wlan And Wwan At Same Time.(Make Wwan And Wlan Have Internet Connectivity Before Enter Ms) Enter Ms And Idle 5 Minutes." Power Down Access Point And Wait 5 Minutes. Check Push Mail Function Work Normally.(Refer To Push Mail Test Case)	●	10	To Do		3	P3
+	Function: Basic audio playback						
+	"Testing purpose:Screen-off and audio playback function work under MS Mode. 
+Using Groove Music or App store application for testing."						
+	Playback An Audio Track Via Supported Ap. Keep Playback At Least 5 Minutes.	●	15	To Do		3	P2
+	Enter Ms Mode By Hot Key Or Power Button. Check Audio Playback Is Continue At Least 10 Minutes And Audio Quality Is Accepted.	●	15	To Do		3	P2
+	Adjust Volume Up And Volume Down During Ms Mode. Check Work As Expect.	●	5	To Do		3	P2
+	Attach Headset To Audio Jack. Check Sound Output From Headset And No Sound Output From Internal Speaker. Repeat Above Steps At Least 5 Cycle.	●	15	To Do		3	P2
+15	Docking				60	3	
+	note: if docking has ethernet port, open command prompt -> run "ncpa.cpl" -> disable all ethernet and wireless devices. open command window and run "netsh int show int", verify all status are disconnect.						
+	"note: all devices includes USB storage, mouse, keyboard, monitor, 3.5"" headset, ethernet
+- 1 USB port(s) available: connect USB storage to dock
+- 2 USB port(s) available: connect USB storage, mouse to dock
+- 3 USB port(s) available: connect USB storage, mouse, keyboard to dock"						
+	note: video port includes VGA, HDMI, DisplayPort						
+	note: audio output device includes docking speaker, audio jack device(3.5" headset)						
+	"note: prepare USB drive. copy sample video from sharepoint
+sample video: SVL sharepoint > documents > test plan template > SLFT > sample video"						
+	"1. power on host
+2. attach all devices to the dock. connect hpcorpnet to dock ethernet to dock.
+3. power on dock if power button available. plug dock to host.
+4. execute [check step]
+5. host enter sleep mode 30 seconds and wakeup system
+6. execute [check step]
+7. host enter hibernation and wakeup system
+8. execute [check step]
+
+[check step]
+1. test mouse and keyboard if available
+   # check mouse and keyboard work without issues
+2. if docking has ethernet port, open command prompt -> ping ""resolver.hpicorp.net""
+   # check no network package lost
+3. connect monitors to all video port. set connected monitors as extended displays in windows
+   # check all extended monitors show desktop without issues
+4. play sample video from USB storage by media player on Win7 or ""movie and TV"" on Win10. move player window to each extended monitor. switch audio output device to each external device
+   # check each monitor plays video with correct display
+   # check each audio device plays correctly"	●	30	To Do		3	P2
+	"1. dock to the unit
+2. power on system
+3. check dock detected on the unit
+4. shutdown unit
+repeat step 2 ~ 4
+* repeat time: manual = 10, auto = 100"	●	30	To Do		3	P2
+	▼ HP Software (Test as needed)						
+16	HP Hotkey Support				10	4	
+	Install HP Hotkeys if not already installed. Verify successful installation.	●	10	NA	Pure OS - 23H2	4	P1
+	Press FN+ESC and verify able to display system information with correct results.	●		NA		4	P1
+	Verify brightness controls work as expected.	●		NA		4	P1
+	Verify microphone mute control works as expected.	●		NA		4	P1
+	If supported in the BIOS for the SUT, Verify LAN/WLAN switching works as expected.	●		NA		4	P1
+17	HP Apps (Fusion Apps)				40	4	
+	"Check if all bundled HP Apps still can be launch after KB installed.
+1. Launch HP Applications, Apps should Launch successfully.
+2. Adhoc testing on HP Applications and list issue if any"	●	10	NA	Pure OS - 23H2	4	P1
+	HPSA (HP Support Assistant) 	●	5	NA		4	P1
+	HP Privacy Settings/Privacy Screen/HP Programmable Key	●	5	NA		4	P1
+	HP Interactive Light	●	5	NA		4	P1
+	HPEC/HPPM	●	5	NA		4	P1
+	" myHP module checking:
+ • Home 
+ • Video Controls (myHP2.0) 
+ • HP Programmable Key (CMIT NB only)
+ • Smart Experiences (Ultron only)
+ • Featured Applications
+ • Settings
+ Note: 
+ 1. Video controls just support from 2022 NPI platforms and Raza, Starlight, Sylva1.0. 
+ 2. Home module support for myHP1.0 and myHP2.0 - P011ZF-B2V to P012E1-B2N and remove from myHP2.0 P012E1-B2P
+3. For ""Corporate Ready image"" and ""MMD"", Feature applicatons will not list in myHP UI since no other HP applications installed. (DCR371524)
+"	●	10	NA		4	P1
+18	BIOS Upgrade Bitlocker Test						
+	Turn off Bitlocker and remove KB	●	30	P		4	P1
+	Downgrade to previous formal bios. (01.xx.xx)	●	10	P		4	P1
+	Enable secure boot.	●	5	P		4	P1
+	Turn on Bitlocker then install KB, save Bitlocker key to USB device.	●	30	p		4	P1
+	Use FUR upgrade to last BIOS but don't restart.	●	15	p		4	P1
+	Do windows update.	●	60	p		4	P1
+	When windows update is finished, reboot system.	●		p		4	P1
+	Check system not ask Bitlocker key.	●		p		4	P1
+	END OF PLAN						

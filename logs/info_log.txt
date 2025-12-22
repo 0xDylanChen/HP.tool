@@ -1,0 +1,36 @@
+[13:46:09] Logs cleared.
+[13:46:24] Info saved to hp.v\SUT_Output.csv
+[13:46:25] Version Check Finished (Check System Log for details).
+[13:46:37] Version Check Finished (Check System Log for details).
+[13:46:38] Version Check Finished (Check System Log for details).
+[13:51:54] Version Check Finished (Check System Log for details).
+[13:53:32] Info saved to hp.v\SUT_Output.csv
+[13:53:36] Version Check Completed. Reports saved in hp.v/
+[13:58:56] Info saved to hp.v\SUT_Output.csv
+[13:59:00] Version Check Completed. Reports saved in hp.v/
+[14:02:20] Version Check Completed. Reports saved in hp.v/
+[14:05:15] Version Check Completed. Reports saved in hp.v/
+[14:11:43] Version Check Finished (Check System Log for details).
+[14:12:08] Version Check Finished (Check System Log for details).
+[14:12:42] Version Check Finished (Check System Log for details).
+[14:14:11] Version Check Finished (Check System Log for details).
+[14:14:17] Version Check Finished (Check System Log for details).
+[14:15:39] Info saved to hp.v\SUT_Output.csv
+[14:15:44] Version Check Finished (Check System Log for details).
+[14:16:16] Version Check Finished (Check System Log for details).
+[14:16:19] Version Check Finished (Check System Log for details).
+[14:16:46] Version Check Finished (Check System Log for details).
+[14:21:42] Info saved to hp.v\SUT_Output.csv
+[14:21:45] Version Check Finished (Check System Log for details).
+[14:22:06] Version Check Finished (Check System Log for details).
+[14:32:53] Version Check Finished (Check System Log for details).
+[14:33:11] Version Check Finished (Check System Log for details).
+[14:48:46] Version Check Finished (Check System Log for details).
+[14:54:16] Report loaded from W70.txt
+[14:54:25] Info saved to hp.v\SUT_Output.csv
+[14:54:45] Version Check Finished (Check System Log for details).
+[14:54:54] Report loaded from W70.txt
+[14:54:55] Version Check Finished (Check System Log for details).
+[14:56:43] Info saved to hp.v\SUT_Output.csv
+[09:54:19] Result:
+Launched get-original...
